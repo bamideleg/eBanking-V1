@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All ebanking Project">
+<suite name="All Test Suite">
     <test name="eBanking-V1">
-        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.ebanking.Testcases.TC_LoginTest_001">
-                <methods>
-                    <include name="loginTest"/>
-                </methods>
-            </class>
-            <class name="com.ebanking.Testcases.TC_LoginTest_002">
-                <methods><include name="loginTest"/>
-                </methods>
-            </class>
+            <class name="com.ebanking.Testcases.TC_searchForJobTest_001"/>
+            <class name="com.ebanking.Testcases.TC_searchForJobTest_002"/>
+            <class name="com.ebanking.Testcases.TC_searchForJobDataProvider"/>
+            <class name="com.ebanking.Testcases.TC_searchForJobDDT_003"/>
         </classes>
     </test>
 </suite>
