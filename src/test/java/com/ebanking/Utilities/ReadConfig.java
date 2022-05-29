@@ -51,15 +51,22 @@ public class ReadConfig {
         return firefoxpath;
     }
 
-
-
     public String getjobName() {
-        String jobName = pro.getProperty("jobName");
-        return jobName;
+        String JobName = pro.getProperty("JobName");
+        return JobName;
     }
     public String getLocation2() {
-        String location2 = pro.getProperty("location2");
-        return location2;
+        String Location2 = pro.getProperty("Location2");
+        return Location2;
+    }
+
+    public String getJobTitle() {
+        String JobTitle = pro.getProperty("JobTitle");
+        return JobTitle;
+    }
+    public String getLocation3() {
+        String Location3 = pro.getProperty("Location3");
+        return Location3;
     }
 
   }
