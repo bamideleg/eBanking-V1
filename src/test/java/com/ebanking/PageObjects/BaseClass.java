@@ -1,8 +1,13 @@
 package com.ebanking.PageObjects;
 
 import com.ebanking.Utilities.ReadConfig;
+import java.io.File;
+import java.io.IOException;
 import java.util.logging.Logger;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,6 +23,10 @@ public class BaseClass {
     public String baseUrl=readconfig.getApplicationURL();
     public String JobType=readconfig.getJobType();
     public String Location=readconfig.getLocation();
+    public String JobName=readconfig.getjobName();
+    public String Location2=readconfig.getLocation2();
+    public String JobTitle=readconfig.getJobTitle();
+    public String Location3=readconfig.getJobTitle();
     public static WebDriver driver;
     public static Logger logger;
 
@@ -46,9 +55,22 @@ public class BaseClass {
         driver.get(baseUrl);
     }
     @AfterTest
-    public void tearDown() {
+    public void tearDown()
+    {
 
         driver.quit();
     }
+    public void captureScreen(WebDriver driver, String tname) throws IOException {
+      TakesScreenshot ts = (TakesScreenshot) driver;
+      File source = ts.getScreenshotAs(OutputType.FILE);
+      File target = new File(System.getProperty("user dir") + "/Screenshots/" + tname + ".png");
+      FileUtils.copyFile(source, target);
+ //     FileUtils.copyFile(source, target);
+      System.out.println("Screenshot taken");
+
+    }
+
+
+
 
 }
