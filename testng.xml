@@ -4,10 +4,10 @@
     <test name="eBanking-V1">
         <parameter name="browser" value="chrome"/>
         <classes>
-        <!--    <class name="com.ebanking.Testcases.TC_searchForJobTest_001"/> -->
-        <!--    <class name="com.ebanking.Testcases.TC_searchForJobTest_002"/> -->
+     <!--       <class name="com.ebanking.Testcases.TC_searchForJobTest_001"/> -->
+     <!--       <class name="com.ebanking.Testcases.TC_searchForJobTest_002"/>-->
+      <!--      <class name="com.ebanking.Testcases.TC_searchForJobDataProvider"/>-->
             <class name="com.ebanking.Testcases.TC_searchForJobDDT_003"/>
-         <!--   <class name="com.ebanking.Testcases.TC_searchForJobDataProvider_004"/> -->
         </classes>
     </test>
 </suite>
