@@ -35,7 +35,7 @@ import org.testng.annotations.Test;
                 Assert.assertTrue(true);
                 logger.info("Test passed");
             } else {
-                captureScreen(driver,"loginTest");
+                captureScreen(driver,"Validate jobs number displayed");
                 Assert.assertFalse(false);
                 logger.info("Test failed");
 

@@ -1,2 +1,2 @@
-cd C:\TestProject\eBanking-V1
+C:\TestProject\eBanking-V1
 mvn clean install
