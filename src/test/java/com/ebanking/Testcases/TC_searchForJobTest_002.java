@@ -15,9 +15,7 @@ public class TC_searchForJobTest_002 extends BaseClass
       @Test
       public void searchForJob_002() {
 
-
           logger.info("User open the browser");
-
           searchForJobPage_002 sp = new searchForJobPage_002(driver);
           sp.setJobName(JobName);
           logger.info("User enter job type");

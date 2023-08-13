@@ -21,7 +21,6 @@ public class searchForJobPage {
         Idriver=rdriver;
         PageFactory.initElements(rdriver,this); // To initialised pageFactory
     }
-
     @FindBy(name="ctl00$main$srch$ctl_qs$txtKey")
     @CacheLookup
     WebElement txtJobType;

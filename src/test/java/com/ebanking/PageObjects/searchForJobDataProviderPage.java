@@ -37,13 +37,13 @@ public class searchForJobDataProviderPage  extends BaseClass {
 
 
     //  The next step is to write action steps
-    public void setJobTitle(String jobTitle)
+    public void setJobTitle(String JobTitle)
     {
-        txtJobTitle.sendKeys(jobTitle);
+        txtJobTitle.sendKeys(JobTitle);
     }
-    public void setLocation(String location3)
+    public void setLocation(String Location3)
     {
-        txtLocation3.sendKeys(location3);
+        txtLocation3.sendKeys(Location3);
     }
     public void clickSearch()
     {
