@@ -77,7 +77,7 @@ public class XLUtils {
         ws=wb.getSheet(xlsheet);
         row=ws.getRow(rownum);
         cell=row.createCell(colnum);
-        cell.setCellValue(data);
+//        cell.setCellValue(data);
         fo=new FileOutputStream(xlfile);
         wb.write(fo);
         wb.close();

@@ -53,14 +53,13 @@ public class TC_searchForJobDDT_003 extends BaseClass {
     @DataProvider(name="jobSearchData")
     Object[][]getData() throws IOException
     {
-        String path=System.getProperty("user.dir")+"/src/test/java/com/ebanking/TestData/jobSearchData.xlsx";
-
+           String path=System.getProperty("user.dir")+"/src/test/java/com/ebanking/TestData/jobSearchData.xlsx";
             int rownum= XLUtils.getRowCount(path, "Sheet1");
             int colcount=XLUtils.getCellCount(path, "Sheet1",1);
 
             String jobSearchData[][]=new String[rownum][colcount];
 
-            for(int i=1; 1<=rownum; i++)
+            for(int i=1; 1<= rownum; i++)
             {
                 for(int j=0; j<colcount; j++)
                 {

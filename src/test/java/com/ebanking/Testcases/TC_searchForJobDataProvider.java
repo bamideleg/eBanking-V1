@@ -39,7 +39,7 @@ public class TC_searchForJobDataProvider extends BaseClass {
     @DataProvider(name = "jobSearchD")
     Object[][] getData() throws IOException {
 
-        String path = System.getProperty("user.dir")+"/src/test/java/com/ebanking/testdata/jobSearchD.xlsx";
+        String path=System.getProperty("user.dir")+"/src/test/java/com/ebanking/TestData/jobSearchData.xlsx";
 
         int rownum = XLUtils.getRowCount(path, "Sheet1");
         int colcount = XLUtils.getCellCount(path, "Sheet1", 1);
